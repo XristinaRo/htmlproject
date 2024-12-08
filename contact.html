@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Αρχική</a></li>
+            <li><a href="contact.html">Επικοινωνία</a></li>
+            <li><a href="multimedia.html">Gallery</a></li>
+            
+        </ul>
+        </nav>
+    <div class="container">
+        <h1>Φόρμα Επικοινωνίας</h1>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Όνομα (Υποχρεωτικό)</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email (Υποχρεωτικό)</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Θέμα (Υποχρεωτικό)</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Λόγος Επικοινωνίας (Ελάχιστο μήκος 15 χαρακτήρες)</label>
+            <textarea id="message" name="message" rows="5" required minlength="15"></textarea>
+
+            <label for="age">Ηλικία</label>
+            <input type="number" id="age" name="age" min="18" required>
+
+            <label for="gender">Φύλο</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Άνδρας</option>
+                <option value="female">Γυναίκα</option>
+            </select>
+
+            <button type="submit">Αποστολή Μηνύματος</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
